@@ -348,6 +348,7 @@ def detect_gemini_refusal(response):
 
 
 LLM_IMPORTS = False
+LAST_MODEL = None
 client = None
 chatgpt_model = None
 anthropic_model = None
@@ -1713,6 +1714,19 @@ def template_node(state):
 
 # Node 3: Model
 def model_node(state):
+    global LLM_IMPORTS, client, chatgpt_model, anthropic_model, gemini_model, LAST_MODEL
+
+    current_model = state.get("config", {}).get("model")
+    
+    if LAST_MODEL is None or LAST_MODEL != current_model:
+        LLM_IMPORTS = False
+        client = None
+        chatgpt_model = None
+        anthropic_model = None
+        gemini_model = None
+        LAST_MODEL = current_model  # update to new model
+
+
     model_name = state.get("config", {}).get("model")
     token_max = state.get("config", {}).get("token_max")
     template = state.get("config", {}).get("template", system_template)
@@ -1822,7 +1836,6 @@ def judge_node(state):
 
 # Node 7: Final status
 def final_node(state):
-    global LLM_IMPORTS, client, chatgpt_model, anthropic_model, gemini_model
     raw_resp = state["raw_model_response"]
     judge_output = state["judge_output"]
 
@@ -1839,14 +1852,6 @@ def final_node(state):
     else:
         state["final_status"] = 0
         state["final_response"] = state["pure_response"]
-
-    LLM_IMPORTS = False
-    client = None
-    chatgpt_model = None
-    anthropic_model = None
-    gemini_model = None
-
-
     return state
 
 
