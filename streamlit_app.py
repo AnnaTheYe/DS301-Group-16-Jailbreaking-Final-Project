@@ -66,7 +66,7 @@ if run_button:
 
         # Build an initial state for the graph
         state = {
-            "user_input": user_prompt,   # <-- add this
+            "user_input": user_prompt, 
             "messages": [{"role": "user", "content": user_prompt}],
             "config": state_config,
         }
@@ -83,9 +83,6 @@ if run_button:
 
         st.subheader("Model Final Output")
         st.write(result.get("final_response", "No final response."))
-
-        st.subheader("Judge Output")
-        st.write(result.get("judge_score", {}))
 
         flagged = result.get("jailbreak", False)
         if flagged:
