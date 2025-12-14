@@ -84,8 +84,18 @@ if run_button:
         st.subheader("Model Final Output")
         st.write(result.get("final_response", "No final response."))
 
-        flagged = result.get("jailbreak", False)
-        if flagged:
+        flag_types = {
+            0: "No jailbreak detected.",
+            1: "Flagged at prompt template model call.",
+            2: "Flagged at judge ensemble.",
+            3: "Flagged by native model API."
+
+        }
+
+        flagged = result.get("final_status", False)
+        if flagged > 0:
             st.error("🚨 **Jailbreak detected!**")
+            flag = result.get("final_status", 0)
+            st.write(f"Flag type: {flag}, {flag_types[flag]}")
         else:
             st.success("🟢 No jailbreak detected.")
