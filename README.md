@@ -122,5 +122,5 @@ for i, (train_idx, test_idx) in enumerate(splits):
 ```
 git clone https://github.com/AnnaTheYe/DS301-Group-16-Jailbreaking-Final-Project.git
 ```
-2. After running desired experiments in `guard_llm_full_pipeline_with_cycles.ipynb`, upload results to your Google Drive
+2. After running desired experiments in `guard_llm_full_pipeline_with_cycles.ipynb`, upload results to your Google Drive in a `./results/` folder
 3. Open `FINAL_GuardLLM_Ablation_Analysis.ipynb` in Google Colab and run analyses
