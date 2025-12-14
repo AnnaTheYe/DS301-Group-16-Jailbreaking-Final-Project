@@ -29,6 +29,12 @@ Large language models are increasingly deployed in real-world systems, yet they 
 
 ## Project Structure
 
+- guard_llm_full_pipeline_with_cycles.ipynb: Main notebook including dataset handling, LangGraph pipeline, and code for running experiments.
+- guard_llm.py: Python file containing only LangGraph pipeline.
+- streamlit_app.py: Python file for running Streamlit app.
+- FINAL_GuardLLM_Ablation_Analysis.ipynb: Notebook for result analyses used for Milestones 2+3 and final presentaiton.
+- Dataset Visualization.ipynb: Exploratory dataset analysis for Milestone 1.
+
 
 ---
 
