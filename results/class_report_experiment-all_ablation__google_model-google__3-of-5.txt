@@ -1,0 +1,72 @@
+
+Total time elapsed: 1160.95 seconds
+
+
+              precision    recall  f1-score   support
+
+           0       0.61      0.97      0.75        69
+           1       0.60      0.07      0.12        46
+
+    accuracy                           0.61       115
+   macro avg       0.60      0.52      0.43       115
+weighted avg       0.61      0.61      0.50       115
+
+
+
+Total rows:  115
+Total benign:  69
+Total harmful:  46
+
+
+True jailbreak counts:  jailbreak
+0    69
+1    46
+Name: count, dtype: int64
+
+Predicted jailbreak counts:  pred_jailbreak
+0    110
+1      5
+Name: count, dtype: int64
+
+
+Flag type counts:  flag_types
+0    110
+3      5
+Name: count, dtype: int64
+
+Benign flag type counts:  flag_types
+0    67
+3     2
+Name: count, dtype: int64
+
+Harmful flag type counts:  flag_types
+0    43
+3     3
+Name: count, dtype: int64
+
+TNs:  67
+FNs:  43
+TPs:  3
+FPs 2
+
+TNR:  0.9710144927536232
+FNR:  0.9347826086956522
+TPR:  0.06521739130434782
+FPR:  0.028985507246376812
+
+
+TN flag type counts:  flag_types
+0    67
+Name: count, dtype: int64
+
+FN flag type counts:  flag_types
+0    43
+Name: count, dtype: int64
+
+TP flag type counts:  flag_types
+3    3
+Name: count, dtype: int64
+
+FP flag type counts:  flag_types
+3    2
+Name: count, dtype: int64

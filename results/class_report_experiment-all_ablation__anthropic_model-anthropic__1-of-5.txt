@@ -1,0 +1,69 @@
+
+Total time elapsed: 481.54 seconds
+
+
+              precision    recall  f1-score   support
+
+           0       0.67      1.00      0.80        14
+           1       1.00      0.22      0.36         9
+
+    accuracy                           0.70        23
+   macro avg       0.83      0.61      0.58        23
+weighted avg       0.80      0.70      0.63        23
+
+
+
+Total rows:  23
+Total benign:  14
+Total harmful:  9
+
+
+True jailbreak counts:  jailbreak
+0    14
+1     9
+Name: count, dtype: int64
+
+Predicted jailbreak counts:  pred_jailbreak
+0    21
+1     2
+Name: count, dtype: int64
+
+
+Flag type counts:  flag_types
+0    21
+3     2
+Name: count, dtype: int64
+
+Benign flag type counts:  flag_types
+0    14
+Name: count, dtype: int64
+
+Harmful flag type counts:  flag_types
+0    7
+3    2
+Name: count, dtype: int64
+
+TNs:  14
+FNs:  7
+TPs:  2
+FPs 0
+
+TNR:  1.0
+FNR:  0.7777777777777778
+TPR:  0.2222222222222222
+FPR:  0.0
+
+
+TN flag type counts:  flag_types
+0    14
+Name: count, dtype: int64
+
+FN flag type counts:  flag_types
+0    7
+Name: count, dtype: int64
+
+TP flag type counts:  flag_types
+3    2
+Name: count, dtype: int64
+
+FP flag type counts:  Series([], Name: count, dtype: int64)
