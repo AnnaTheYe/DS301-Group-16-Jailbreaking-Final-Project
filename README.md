@@ -4,7 +4,7 @@
 
 This repository contains the final project for **NYU DS-UA 301 (Advanced Topics in Data Science: LLMs and Deep Learning)** by **Group 16**. Our project, **GuardLLM**, is a unified evaluation framework designed to test the robustness of large language models (LLMs) against jailbreak attacks. GuardLLM supports both single-turn and multi-turn adversarial prompts and enables systematic analysis of how different pipeline components—such as smoothing, templating, transcript memory, and judge-based evaluation—affect model safety behavior. In addition to offline notebook-based analysis, this repository includes a **Streamlit application** that allows interactive testing of jailbreak prompts and inspection of model responses.
 
-Our presentation slides with recorded demo can be found here: [**Slides Link with Demo**](https://docs.google.com/presentation/d/1wpt-7pjNHB9X0QuhkZUD6NAoU0t1R7SveAM97tUsWIQ/edit?usp=sharing)
+Our presentation slides with recorded demo can be found here: [**Slides Link with Demo**](https://docs.google.com/presentation/d/1wpt-7pjNHB9X0QuhkZUD6NAoU0t1R7SveAM97tUsWIQ/edit?usp=sharing) or in `Advacned Topics Final Project - Guard LLM .pptx`.
 
 ---
 ## Group Members 
@@ -36,6 +36,7 @@ Large language models are increasingly deployed in real-world systems, yet they 
 - `streamlit_app.py`: Python file for running Streamlit app.
 - `FINAL_GuardLLM_Ablation_Analysis.ipynb`: Notebook for result analyses used for Milestones 2+3 and final presentaiton.
 - `Dataset Visualization.ipynb`: Exploratory dataset analysis for Milestone 1.
+- `Advacned Topics Final Project - Guard LLM .pptx`: Presentation slides.
 
 
 ---
@@ -56,7 +57,7 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-Streamlit demo can be found on slide 10 in this presentation: [**Slides Link with Demo**](https://docs.google.com/presentation/d/1wpt-7pjNHB9X0QuhkZUD6NAoU0t1R7SveAM97tUsWIQ/edit?usp=sharing)
+Streamlit demo can be found on slide 10 in this presentation: [**Slides Link with Demo**](https://docs.google.com/presentation/d/1wpt-7pjNHB9X0QuhkZUD6NAoU0t1R7SveAM97tUsWIQ/edit?usp=sharing) or in `Advacned Topics Final Project - Guard LLM .pptx`.
 
 ---
 
