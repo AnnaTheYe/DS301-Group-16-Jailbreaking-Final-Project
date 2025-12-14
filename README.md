@@ -2,7 +2,7 @@
 # NYU DS-UA 301 — Group 16 Final Project  
 ## GuardLLM: Evaluating LLM Robustness to Jailbreak Attacks
 
-This repository contains the final project for **NYU DS-UA 301 (Social Networking)** by **Group 16**. Our project, **GuardLLM**, is a unified evaluation framework designed to test the robustness of large language models (LLMs) against jailbreak attacks. GuardLLM supports both single-turn and multi-turn adversarial prompts and enables systematic analysis of how different pipeline components—such as smoothing, templating, transcript memory, and judge-based evaluation—affect model safety behavior. In addition to offline notebook-based analysis, this repository includes a **Streamlit application** that allows interactive testing of jailbreak prompts and inspection of model responses.
+This repository contains the final project for **NYU DS-UA 301 (Advanced Topics in Data Science: LLMs and Deep Learning)** by **Group 16**. Our project, **GuardLLM**, is a unified evaluation framework designed to test the robustness of large language models (LLMs) against jailbreak attacks. GuardLLM supports both single-turn and multi-turn adversarial prompts and enables systematic analysis of how different pipeline components—such as smoothing, templating, transcript memory, and judge-based evaluation—affect model safety behavior. In addition to offline notebook-based analysis, this repository includes a **Streamlit application** that allows interactive testing of jailbreak prompts and inspection of model responses.
 
 ---
 ## Group Members 
